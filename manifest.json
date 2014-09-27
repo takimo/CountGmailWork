@@ -1,0 +1,13 @@
+{
+  "name": "CountGmailWork",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Gmailにどのくらい一日時間を使っているか記録します",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["script.js"],
+	  "run_at": "document_start"
+    }
+  ]
+}
